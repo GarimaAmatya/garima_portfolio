@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garima Amatya Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4b7bec;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4b7bec;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    .skills, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill, .contact-item {
+      background: #e0e7ff;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+
+    .project {
+      background: #f0f4ff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #4b7bec;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3867d6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Garima Amatya</h1>
+    <p>BIM Student | Aspiring Project Manager</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm an enthusiastic BIM student who loves learning new things. I aim to become a project manager in the future and enjoy working with people and solving real-world problems.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">C Programming (Basic)</div>
+      <div class="skill">Java Programming (Basic)</div>
+      <div class="skill">Web Technology I & II</div>
+      <div class="skill">Canva</div>
+      <div class="skill">MS Excel</div>
+      <div class="skill">MS Word</div>
+      <div class="skill">Communication</div>
+      <div class="skill">Teamwork</div>
+      <div class="skill">Leadership</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <button onclick="toggleProjects()">Show/Hide Projects</button>
+    <div id="project-list" style="margin-top: 1rem;">
+      <div class="project">
+        <strong>Event Management System</strong>
+        <p>A conceptual system for planning events with team collaboration and scheduling tools.</p>
+      </div>
+      <div class="project">
+        <strong>Portfolio Website</strong>
+        <p>A personal website built with HTML and CSS to showcase my academic and professional goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Bachelor in Information Management (BIM)</strong></p>
+    <p>Orchid International College, Gaushala, Kathmandu</p>
+    <p>Affiliated to Tribhuvan University</p>
+    <p>Expected Graduation: 2027</p>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <div class="skills">
+      <div class="skill">Newari (Fluent)</div>
+      <div class="skill">Nepali (Fluent)</div>
+      <div class="skill">Hindi (Fluent)</div>
+      <div class="skill">English (Fluent)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <div class="contact-item">📧 Email: amatyagarima01@gmail.com</div>
+      <div class="contact-item">📞 Phone: 9869078733</div>
+      <div class="contact-item">🌐 LinkedIn: (Add your link here)</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Garima Amatya
+  </footer>
+
+  <script>
+    function toggleProjects() {
+      const projects = document.getElementById('project-list');
+      projects.style.display = projects.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
